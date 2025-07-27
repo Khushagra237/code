@@ -10,6 +10,7 @@ root.bind('<Key>', handle_keypress)
 def handle_click(event):
     print("\nThe button was clicked")
 button = tk.Button(text='Click Me!')
+button.pack()
 button.bind('<Button-1>', handle_click)
 root.mainloop()
 
